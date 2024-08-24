@@ -17,5 +17,6 @@ chrome.commands.onCommand.addListener((command) => {
 chrome.runtime.onInstalled.addListener(details => {
         if (details.reason === chrome.runtime.OnInstalledReason.INSTALL) {
                 chrome.tabs.create({ url: 'https://contestify-app.vercel.app' });
+                chrome.runtime.setUninstallURL(`https://contestify-app.vercel.app`);
         }
 });

@@ -491,22 +491,60 @@
             <p class="text-xl font-light mb-6">The ultimate tool for competitive programmers to track their contests,
                 access leaderboards, receive notifications, and subscribe to email updates.</p>
             <img src="assets/images/contestify/logo.png" alt="Contestify Extension" class="w-80 rounded-md">
-            <a href="https://github.com/contestify-app/contestify-app/releases/download/0.1.0/contestify-app.crx" target="_blank" class="my-4 font-semibold text-blue-500 hover:text-blue-600">Contestify - Extention</a>
+            <a href="https://github.com/contestify-app/contestify-app/releases/download/0.1.0/contestify-app.crx"
+                target="_blank" class="my-4 font-semibold text-green-400 hover:text-green-500">Contestify - Extention</a>
         </section>
 
         <!-- How It Works Section -->
-        <section class="min-h-screen flex flex-col items-center justify-center text-center p-10 bg-[#1a1a1a]"
-            id="working">
-            <h2 class="text-4xl font-bold mb-4 text-green-500">How It Works</h2>
-            <div class="text-xl font-light mb-6 flex flex-col items-center justify-center">
-                <p>Contestify simplifies the process of staying updated with the latest programming contests.</p>
-                <p>Just install the extension, and get started with:</p>
-                <ul class="list-disc list-inside text-left">
-                    <li>Tracking all your contests from different platforms in one place.</li>
-                    <li>Accessing leaderboards to see how you rank.</li>
-                    <li>Receiving notifications about upcoming and ongoing contests.</li>
-                    <li>Subscribing to email updates for contest reminders.</li>
-                </ul>
+        <section class="min-h-screen flex flex-col items-center justify-center p-10 bg-[#1a1a1a]" id="working">
+            <h2 class="text-3xl font-bold mb-6 text-center">Set Up the Contestify Browser Extension</h2>
+
+            <ol class="list-decimal pl-5 space-y-4 text-lg">
+                <!-- Step 1 -->
+                <li>
+                    <span class="font-semibold">Download and Extract the Extension:</span>
+                    <p>Click <a
+                            href="https://github.com/contestify-app/contestify-web-app/releases/download/0.0.1/contestify-web-app.zip"
+                            target="_blank" class="text-green-500 underline">here</a> to download the ZIP file.
+                        Extract the contents to a folder on your computer.</p>
+                </li>
+
+                <!-- Step 2 -->
+                <li>
+                    <span class="font-semibold">Enable Developer Mode in Browser:</span>
+                    <p>Open Chrome and go to <strong>Menu &gt; More tools &gt; Extensions</strong>. Toggle the
+                        <strong>Developer mode</strong> switch in the top-right corner.
+                    </p>
+                </li>
+
+                <!-- Step 3 -->
+                <li>
+                    <span class="font-semibold">Load the Unpacked Extension:</span>
+                    <p>Click the <strong>Load unpacked</strong> button and select the extracted folder. The
+                        `Contestify` extension will be added to Chrome.</p>
+                </li>
+
+                <!-- Step 4 -->
+                <li>
+                    <span class="font-semibold">Pin the Extension:</span>
+                    <p>Click the puzzle icon in the top-right corner, find `Contestify`, and click the pin icon to
+                        pin it to the toolbar.</p>
+                </li>
+
+                <!-- Step 5 -->
+                <li>
+                    <span class="font-semibold">Verify the Extension:</span>
+                    <p>You should see the `Contestify` icon in your Chrome toolbar. Click it to access the
+                        extension.</p>
+                </li>
+            </ol>
+
+            <div class="text-center mt-8">
+                <a href="https://github.com/contestify-app/contestify-web-app/releases/download/0.0.1/contestify-web-app.zip"
+                    target="_blank"
+                    class="inline-block bg-emerald-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-emerald-700 transition-all duration-300 ease-in-out">
+                    Download Contestify Extension
+                </a>
             </div>
         </section>
         <!-- FAQ's section-->
@@ -657,7 +695,8 @@
             gsap.from("#extension img", { duration: 1, opacity: 0, x: 50, stagger: 0.2 });
             gsap.from("#extension a", { duration: 1, opacity: 0, x: 50, stagger: 0.2 });
             gsap.from("#faqs div", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
-            gsap.from("#working ul li", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
+            gsap.from("#working ol li", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
+            gsap.from("#working div", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
             gsap.from("#contact form", { duration: 1, opacity: 0, y: 50, stagger: 0.2 });
         });
 
